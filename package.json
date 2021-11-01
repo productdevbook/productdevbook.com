@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@unocss/preset-icons": "^0.4.7",
+    "nuxt-windicss": "^2.0.9",
     "nuxt3": "3.0.0-27258467.4e424d0",
     "unocss": "^0.4.7"
   }
