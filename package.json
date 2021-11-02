@@ -7,9 +7,9 @@
     "allupdate": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
-    "@unocss/preset-icons": "^0.4.9",
+    "@unocss/preset-icons": "^0.4.10",
     "nuxt-windicss": "^2.0.11",
     "nuxt3": "3.0.0-27264119.e58270a",
-    "unocss": "^0.4.9"
+    "unocss": "^0.4.10"
   }
 }
