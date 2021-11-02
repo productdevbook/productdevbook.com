@@ -4,9 +4,6 @@ import UnocssIcons from '@unocss/preset-icons'
 
 
 export default defineNuxtConfig({
-    buildModules: [
-        'nuxt-windicss',
-    ],
     css: [
         '~/styles/main.css',
     ],
