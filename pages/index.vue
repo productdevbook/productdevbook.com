@@ -5,15 +5,13 @@
             <div v-else="result" class="flex space-x-4">
                 <span
                     v-for="item in result.framework"
-                    :key="item.id"
+                    :key="item?.id"
                     class="bg-gray-200 py-2 px-3 rounded-md text-gray-900 font-medium"
                 >
                     <!-- <img :src="item." alt=""> -->
                     {{ item?.title }}
                 </span>
             </div>
-
-           
         </div>
         <div class="max-w-1xl mx-auto bg-gray-200 p-4 rounded-lg">
             <div class="flex">
@@ -29,7 +27,7 @@
                     <p class="font-bold">Title</p>
                     <p
                         class="font-normal text-yellow-600"
-                    > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis delectus consectetur voluptatem dolorum pariatur a ipsa repellat tenetur magni! Fugit?</p>
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis delectus consectetur voluptatem dolorum pariatur a ipsa repellat tenetur magni! Fugit?</p>
                 </div>
             </div>
         </div>
