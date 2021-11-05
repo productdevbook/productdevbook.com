@@ -4,8 +4,7 @@ import {
     createHttpLink
 } from '@apollo/client/core'
 import { defineNuxtPlugin, NuxtApp } from '#app'
-import { DefaultApolloClient } from '@vue/apollo-composable'
-
+import { DefaultApolloClient, provideApolloClient } from '@vue/apollo-composable'
 
 export default defineNuxtPlugin((nuxt: NuxtApp) => {
     const httpLink = createHttpLink({
@@ -19,5 +18,6 @@ export default defineNuxtPlugin((nuxt: NuxtApp) => {
         link: httpLink,
         cache: new InMemoryCache()
     })
+    provideApolloClient(apolloClient)
     nuxt.provide("apollo", { DefaultApolloClient, apolloClient })
 })
