@@ -1,5 +1,7 @@
 <template>
     <div class="max-w-1xl mx-auto bg-gray-200 p-4 rounded-lg">
+        <div v-if="loading">loading....</div>
+        <div v-if="!loading" v-for="item in result?.framework">{{ item?.title }}</div>
         <div class="flex">
             <figure class="h-20 w-20 m-0">
                 <img
@@ -20,10 +22,14 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useFrameworkQuery } from '~~/types/types'
 
 export default defineComponent({
     setup() {
-
+        const { result, loading } = useFrameworkQuery()
+        return {
+            result, loading
+        }
     },
 })
 </script>
