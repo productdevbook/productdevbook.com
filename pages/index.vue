@@ -35,11 +35,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { useFrameworkQuery } from '~~/types/types'
+import { useFrameworksQuery } from '~/types/types'
+
 
 export default defineComponent({
     setup() {
-        const { result, loading } = useFrameworkQuery()
+        const { result, loading } = useFrameworksQuery()
         return {
             result, loading
         }
