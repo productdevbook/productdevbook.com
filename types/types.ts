@@ -407,33 +407,35 @@ export type Version_Framework_Filter = {
   version_id?: Maybe<Version_Filter>;
 };
 
-export type FrameworkQueryVariables = Exact<{ [key: string]: never; }>;
+export type FrameworksQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FrameworkQuery = { __typename?: 'Query', framework?: Array<{ __typename?: 'framework', title?: string | null | undefined } | null | undefined> | null | undefined };
+export type FrameworksQuery = { __typename?: 'Query', framework?: Array<{ __typename?: 'framework', id?: string | null | undefined, title?: string | null | undefined, logo?: string | null | undefined } | null | undefined> | null | undefined };
 
 
-export const FrameworkDocument = gql`
-    query framework {
+export const FrameworksDocument = gql`
+    query frameworks {
   framework {
+    id
     title
+    logo
   }
 }
     `;
 
 /**
- * __useFrameworkQuery__
+ * __useFrameworksQuery__
  *
- * To run a query within a Vue component, call `useFrameworkQuery` and pass it any options that fit your needs.
- * When your component renders, `useFrameworkQuery` returns an object from Apollo Client that contains result, loading and error properties
+ * To run a query within a Vue component, call `useFrameworksQuery` and pass it any options that fit your needs.
+ * When your component renders, `useFrameworksQuery` returns an object from Apollo Client that contains result, loading and error properties
  * you can use to render your UI.
  *
  * @param options that will be passed into the query, supported options are listed on: https://v4.apollo.vuejs.org/guide-composable/query.html#options;
  *
  * @example
- * const { result, loading, error } = useFrameworkQuery();
+ * const { result, loading, error } = useFrameworksQuery();
  */
-export function useFrameworkQuery(options: VueApolloComposable.UseQueryOptions<FrameworkQuery, FrameworkQueryVariables> | VueCompositionApi.Ref<VueApolloComposable.UseQueryOptions<FrameworkQuery, FrameworkQueryVariables>> | ReactiveFunction<VueApolloComposable.UseQueryOptions<FrameworkQuery, FrameworkQueryVariables>> = {}) {
-  return VueApolloComposable.useQuery<FrameworkQuery, FrameworkQueryVariables>(FrameworkDocument, {}, options);
+export function useFrameworksQuery(options: VueApolloComposable.UseQueryOptions<FrameworksQuery, FrameworksQueryVariables> | VueCompositionApi.Ref<VueApolloComposable.UseQueryOptions<FrameworksQuery, FrameworksQueryVariables>> | ReactiveFunction<VueApolloComposable.UseQueryOptions<FrameworksQuery, FrameworksQueryVariables>> = {}) {
+  return VueApolloComposable.useQuery<FrameworksQuery, FrameworksQueryVariables>(FrameworksDocument, {}, options);
 }
-export type FrameworkQueryCompositionFunctionResult = VueApolloComposable.UseQueryReturn<FrameworkQuery, FrameworkQueryVariables>;
+export type FrameworksQueryCompositionFunctionResult = VueApolloComposable.UseQueryReturn<FrameworksQuery, FrameworksQueryVariables>;
