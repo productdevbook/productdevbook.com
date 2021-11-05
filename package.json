@@ -17,7 +17,7 @@
     "@graphql-codegen/typescript-vue-apollo": "3.2.0",
     "@types/isomorphic-fetch": "0.0.35",
     "nuxt-windicss": "2.0.11",
-    "nuxt3": "3.0.0-27267528.292b524"
+    "nuxt3": "3.0.0-27267816.6bd7186"
   },
   "dependencies": {
     "@apollo/client": "3.4.16",
