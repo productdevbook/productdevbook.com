@@ -975,35 +975,10 @@
     error-stack-parser "^2.0.0"
     string-width "^4.2.3"
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27268388.4da062a":
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27268388.4da062a", "@nuxt/kit@npm:@nuxt/kit-edge@latest":
   version "3.0.0-27268388.4da062a"
   resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27268388.4da062a.tgz#a12458c0b312248377734c3c617f214e8baaa3ca"
   integrity sha512-E4RcUEJo5c2loD41EcLTiuXBG1rkljeutw8C5rmJv9oM7syRx9e96CdflUoUaHsejEbHagvICxC+nboFCPG8cw==
-  dependencies:
-    consola "^2.15.3"
-    create-require "^1.1.1"
-    defu "^5.0.0"
-    dotenv "^10.0.0"
-    globby "^11.0.4"
-    hash-sum "^2.0.0"
-    hookable "^5.0.0"
-    jiti "^1.12.9"
-    lodash.template "^4.5.0"
-    mlly "^0.3.12"
-    pathe "^0.2.0"
-    pkg-types "^0.3.1"
-    rc9 "^1.2.0"
-    scule "^0.2.1"
-    semver "^7.3.5"
-    std-env "^3.0.0"
-    ufo "^0.7.9"
-    unctx "^1.0.2"
-    untyped "^0.2.11"
-
-"@nuxt/kit@npm:@nuxt/kit-edge@latest":
-  version "3.0.0-27265876.3cd4494"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27265876.3cd4494.tgz#3375d07f032a41ae6b58dc3725fae15ef5a76234"
-  integrity sha512-69oWKZiHPajONbxf4lPJdMp3Y6MlGmArVn283mlevv7jblrhQmEDDQrcfW7BIvuJ2athhfk7g8L9Ase0I1qIKg==
   dependencies:
     consola "^2.15.3"
     create-require "^1.1.1"
@@ -1756,27 +1731,27 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
-"@windicss/config@1.4.12":
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.4.12.tgz#32842fe009b64176b004c83a93c5189066042c33"
-  integrity sha512-+ckfkRoWC8wia5o7iCyDmydiJEkjX6lVEb6a2QVPI9WQ9Mi7hqfgOoStijOsEn0wIz95FDiOfVe5aSb1V4jEtw==
+"@windicss/config@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.5.1.tgz#e3fdaddfc553442c85f67f2e9290ef46ce87b3a1"
+  integrity sha512-nWNgvvJj9RcYhLcqwju/Z8FfaHRjyWHDYS3IgY7lWUM+vWTLFuKqhavKfC1589kdYjiO9JeX07Vg+YzfcxP0Yw==
   dependencies:
     debug "^4.3.2"
     jiti "^1.12.9"
-    windicss "^3.1.9"
+    windicss "^3.2.1"
 
-"@windicss/plugin-utils@1.4.12", "@windicss/plugin-utils@^1.1.1", "@windicss/plugin-utils@^1.4.12":
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.4.12.tgz#9929369018c8660ee2f218c47cfa4b83f5174c59"
-  integrity sha512-ixYflwELxEjHyh0B9HqTwDp1d3v5IWtUucVY84o41ZU53BkuRw1lKbNlLMqbrtbk8p8rAQxjuwWZkWxFYi77tQ==
+"@windicss/plugin-utils@1.5.1", "@windicss/plugin-utils@^1.1.1", "@windicss/plugin-utils@^1.4.12":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.5.1.tgz#9750bb72e8c14585e011d46a33351d47d8519e31"
+  integrity sha512-gxJiTCMKv1p1x4W2BLG2yfNe+DfIVPc8+aKvfCUCtOpdg5GB5yzhuAC4ROsKiXHxu4QXoojrh7jXH6ELlrELpQ==
   dependencies:
     "@antfu/utils" "^0.3.0"
-    "@windicss/config" "1.4.12"
+    "@windicss/config" "1.5.1"
     debug "^4.3.2"
     fast-glob "^3.2.7"
     magic-string "^0.25.7"
     micromatch "^4.0.4"
-    windicss "^3.1.9"
+    windicss "^3.2.1"
 
 "@wry/context@^0.6.0":
   version "0.6.1"
@@ -2358,9 +2333,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001274:
-  version "1.0.30001276"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001276.tgz#7049685eb972eb09c0ecbb57227b489d76244fb1"
-  integrity sha512-psUNoaG1ilknZPxi8HuhQWobuhLqtYSRUxplfVkEJdgZNB9TETVYGSBtv4YyfAdGvE6gn2eb0ztiXqHoWJcGnw==
+  version "1.0.30001278"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001278.tgz#51cafc858df77d966b17f59b5839250b24417fff"
+  integrity sha512-mpF9KeH8u5cMoEmIic/cr7PNS+F5LWBk0t2ekGT60lFf0Wq+n9LspAj0g3P+o7DQhD3sUdlMln4YFAWhFYn9jg==
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -3177,9 +3152,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.886:
-  version "1.3.888"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.888.tgz#243204af9b4c928ac45e47dbbe7bc44c30e65bf0"
-  integrity sha512-5iD1zgyPpFER4kJ716VsA4MxQ6x405dxdFNCEK2mITL075VHO5ResjY0xzQUZguCww/KlBxCA6JmBA9sDt1PRw==
+  version "1.3.889"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.889.tgz#0b7c6f7628559592d5406deda281788f37107790"
+  integrity sha512-suEUoPTD1mExjL9TdmH7cvEiWJVM2oEiAi+Y1p0QKxI2HcRlT44qDTP2c1aZmVwRemIPYOpxmV7CxQCOWcm4XQ==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -4838,9 +4813,9 @@ loader-utils@^1.0.2, loader-utils@^1.4.0:
     json5 "^1.0.1"
 
 loader-utils@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.1.tgz#3b8d4386f42378d6434d32d7bc08e7a52d39575e"
-  integrity sha512-g4miPa9uUrZz4iElkaVJgDFwKJGh8aQGM7pUL4ejXl6cu7kSb30seQOVGNMP6sW8j7DW77X68hJZ+GM7UGhXeQ==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"
+  integrity sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==
   dependencies:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
@@ -5533,19 +5508,10 @@ object.assign@^4.1.0, object.assign@^4.1.2:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-ohmyfetch@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/ohmyfetch/-/ohmyfetch-0.4.2.tgz#955cc560ccb2bb99fc9de22552332fc6c208364e"
-  integrity sha512-wlZ12IB4L8qvr7KBnA4MdqqoUovgfOKUJXoZMSwrTp54jTs20LENDoFXmyW0Qwg9fydrB/sT2qD8a/0iFehQOw==
-  dependencies:
-    destr "^1.1.0"
-    node-fetch "^3.0.0"
-    ufo "^0.7.9"
-
 ohmyfetch@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/ohmyfetch/-/ohmyfetch-0.4.4.tgz#c25cd9835cbb0feea2870c7492cfbba883ec935c"
-  integrity sha512-X2dPtBEy3fglyXCTtS6ep8fpE/zq7duW0wv5IOpKz7KCg97rXuHf/HRUHghythcre5r5H1uZLuHaIrdM1SlW3w==
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/ohmyfetch/-/ohmyfetch-0.4.5.tgz#662bc3f62293978d1f19c4930b8b58b1957b66f6"
+  integrity sha512-2d+c5nYKdLZKI93kfDQLA6+ZWsROu41Enwl/W9wnDIY1F4D0+J9CyKruV5gQiNqNwMAyHlxNsyl3nzdFfAJ41Q==
   dependencies:
     destr "^1.1.0"
     node-fetch "^3.0.0"
@@ -7319,9 +7285,9 @@ undici@^4.9.3, undici@^4.9.5:
   integrity sha512-t59IFVYiMnFThboJL9izqwsDEfSbZDPZ/8iCYBCkEFLy63x9m4YaNt0E+r5+X993syC9M0W/ksusZC9YuAamMg==
 
 unenv@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/unenv/-/unenv-0.4.0.tgz#8ee7a61af37f3ac6c13bdcc18d42987f4ac38049"
-  integrity sha512-/UwjnsUae/nW3x1zV9AKXHRWBsqPsrEcSz1eEroGkhOpnTGsZ1krOGn8lykmw1L9tAOdW4ENOVsR38cS6BW0LA==
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/unenv/-/unenv-0.4.1.tgz#a8cf1227112240bd3a64341c5d853fbd463eb488"
+  integrity sha512-Na9RJ+35eMbUdwyhXA9vZxsUpKwMvaOHkQEhzACL26/W7pa/u1lnJDx0Z00OOuks8yWg4vSKjMmF0FzPZmQRJA==
   dependencies:
     buffer "^6.0.2"
     defu "^5.0.0"
@@ -7356,16 +7322,16 @@ unpipe@~1.0.0:
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
 unplugin@^0.2.19:
-  version "0.2.19"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.2.19.tgz#f1699b36eaef14be94cf5eb3babfe1cac37be67a"
-  integrity sha512-r5PDeBBecir99rhLFp1ftqIkp5afD91anweIlWtF5Ca46FJsn2kQczD93FdFJw79R6HSF5waeYo79bFOQ9GVhQ==
+  version "0.2.20"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.2.20.tgz#fd579b8f302459eb1ae3616f71c2ba93e6076187"
+  integrity sha512-CGnCaTqNjqeixpIlNEkpysxfR2hb4xv21xa4IURXnhYTfCp73UWuG0KcdanuhFJbwO5w+EGK4XaAaqdb/1vWbg==
   dependencies:
     webpack-virtual-modules "^0.4.3"
 
 unstorage@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/unstorage/-/unstorage-0.3.0.tgz#5140be6c0d8146e488da080e018fe28547b498d6"
-  integrity sha512-pPO3Hm0SD6zvgpJZMGsmv7y/EV0djbGamDZBBM2tewxFTyn628QHThW4u8ay/O21QQBomCs7OWSQ92UMW0fyGQ==
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/unstorage/-/unstorage-0.3.1.tgz#d79564dd116f2a887161b7bda5365bc98e5e2531"
+  integrity sha512-BbgDN28jEyYfnxaL2Oi5+XEzf6N02Wq06S6fjNfU74I7ah13YeidbylDBoGJFYjVc+kVdpvjIoQW1wTkt6al+w==
   dependencies:
     anymatch "^3.1.1"
     chokidar "^3.5.2"
@@ -7374,14 +7340,14 @@ unstorage@^0.3.0:
     ioredis "^4.27.9"
     listhen "^0.2.4"
     mri "^1.1.6"
-    ohmyfetch "^0.4.2"
+    ohmyfetch "^0.4.4"
     ufo "^0.7.9"
     ws "^8.2.1"
 
 untyped@^0.2.11:
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/untyped/-/untyped-0.2.11.tgz#a956977e82ad1186232995bc4ba4b68ae7d20b26"
-  integrity sha512-KVNcu9jB+mlnQJiunAzmqpnnn9R+yniT+AkOk9ZgCIsThwh0nlP6wO+O7mJjHM7Y2yplEu3v6NNtRvb82+uGxw==
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/untyped/-/untyped-0.2.12.tgz#7bd9fee523e82e087af46248038680ee4ee56359"
+  integrity sha512-mdMpwUHnJUQDpEmuByMuLxYdrPVlA98a1/b8MgoFoasR5tJTfsNbhAPfceAgFqMd/E05427T7MXgJGqdtDF/bQ==
 
 upath@^2.0.1:
   version "2.0.1"
@@ -7463,14 +7429,14 @@ vendors@^1.0.3:
   integrity sha512-/juG65kTL4Cy2su4P8HjtkTxk6VmJDiOPBufWniqQ6wknac6jNiXS9vU+hO3wgusiyqWlzTbVHi0dyJqRONg3w==
 
 vite-plugin-windicss@^1.4.11:
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.4.12.tgz#a301fd554425042b5fdaec562bd11a5a0fcbf178"
-  integrity sha512-5YLT7e72z1vCTSmprU/KxtRg22ySN+H19Qxy67lbG3mEbq8YbheOlmVhbqNqSv2MjFVhFqu72Q1FkkjyWENyQQ==
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.5.1.tgz#bf15165da15cacadc3cdb8cc1a61d287cef2dc75"
+  integrity sha512-AUuRFT5Y7SfW9eclaKf5BOTZ7MMfkUZzOeVzqd9yq/uIwzWyleRtssCTuJgZ0+om+hnXn9YwcIpR26lsaasIbg==
   dependencies:
-    "@windicss/plugin-utils" "1.4.12"
+    "@windicss/plugin-utils" "1.5.1"
     chalk "^4.1.2"
     debug "^4.3.2"
-    windicss "^3.1.9"
+    windicss "^3.2.1"
 
 vite@^2.6.13:
   version "2.6.13"
@@ -7750,7 +7716,7 @@ windicss-webpack-plugin@^1.5.5:
     webpack-virtual-modules "^0.4.3"
     windicss "^3.2.0"
 
-windicss@^3.1.9, windicss@^3.2.0:
+windicss@^3.2.0, windicss@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.2.1.tgz#bd0f7b9ebabba04ea8dfedcbb0263c2ef9591db4"
   integrity sha512-LusrIrryBFHAPQ/OOTbS4EWWuzI6eGeJglI9nQ3kDBr1cqH69NWt8Z8q59f9kTkgptXroejmWfksWwqgHs8EVw==
