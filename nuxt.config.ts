@@ -1,10 +1,15 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-    buildModules: [
-        'nuxt-windicss',
-    ],
     build: {
-        transpile: ['tslib', '@apollo/client', 'ts-invariant']
+        transpile: ['tslib', '@apollo/client', 'ts-invariant'],
+        postcss: {
+            postcssOptions: {
+                plugins: {
+                    tailwindcss: {},
+                    autoprefixer: {},
+                }
+            }
+        },
     }
 })

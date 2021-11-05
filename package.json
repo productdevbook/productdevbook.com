@@ -16,8 +16,11 @@
     "@graphql-codegen/typescript-operations": "2.2.0",
     "@graphql-codegen/typescript-vue-apollo": "3.2.0",
     "@types/isomorphic-fetch": "0.0.35",
+    "autoprefixer": "10.4.0",
     "nuxt-windicss": "2.0.11",
-    "nuxt3": "3.0.0-27267816.6bd7186"
+    "nuxt3": "3.0.0-27267816.6bd7186",
+    "postcss": "8.3.11",
+    "tailwindcss": "3.0.0-alpha.1"
   },
   "dependencies": {
     "@apollo/client": "3.4.16",
