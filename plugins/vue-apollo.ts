@@ -8,7 +8,7 @@ import { DefaultApolloClient, provideApolloClient } from '@vue/apollo-composable
 
 export default defineNuxtPlugin((nuxt: NuxtApp) => {
     const httpLink = createHttpLink({
-        uri: 'http://localhost:8055/graphql',
+        uri: 'https://api.productdevbook.com/graphql',
         fetch: (uri, options) => {
             return fetch(uri, options)
         }
