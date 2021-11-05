@@ -4,16 +4,25 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
-    "allupdate": "yarn upgrade-interactive --latest"
+    "allupdate": "yarn upgrade-interactive --latest",
+    "ts": "graphql-codegen --config codegen.yml"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.2.2",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/schema-ast": "2.3.0",
+    "@graphql-codegen/typescript": "2.3.0",
+    "@graphql-codegen/typescript-graphql-files-modules": "2.1.0",
+    "@graphql-codegen/typescript-operations": "2.2.0",
+    "@graphql-codegen/typescript-vue-apollo": "3.2.0",
     "@types/isomorphic-fetch": "0.0.35",
     "nuxt-windicss": "2.0.11",
-    "nuxt3": "3.0.0-27265876.3cd4494"
+    "nuxt3": "3.0.0-27267528.292b524"
   },
   "dependencies": {
     "@apollo/client": "3.4.16",
     "@vue/apollo-composable": "4.0.0-alpha.15",
+    "@vue/composition-api": "1.3.3",
     "graphql": "16.0.1",
     "graphql-tag": "2.12.5",
     "isomorphic-fetch": "3.0.0"
