@@ -1,0 +1,17 @@
+overwrite: true
+
+documents: ./graphql/**/*.graphql
+
+schema: ./schema.graphql
+# schema: http://localhost:3000/graphql
+generates:
+  generated/gql.d.ts:
+    plugins:
+      - typescript-graphql-files-modules
+  types/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-vue-apollo
+    config:
+      withCompositionFunctions: true
