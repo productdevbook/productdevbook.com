@@ -9,6 +9,7 @@
             >
                 <!-- <img :src="item." alt=""> -->
                 {{ item?.title }}
+                {{ item?.logo }}
             </span>
         </div>
     </div>

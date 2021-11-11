@@ -10,7 +10,7 @@
                 </template>
             </Suspense>
         </div>
-        <div class="max-w-1xl mx-auto bg-gray-200 p-4 rounded-lg">
+        <div class="max-w-1xl mx-auto bg-gray-200 p-4 rounded-lg dark:bg-gray-700">
             <div class="flex">
                 <figure class="h-20 w-20 m-0">
                     <img
