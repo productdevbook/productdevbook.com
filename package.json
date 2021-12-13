@@ -25,7 +25,7 @@
     "autoprefixer": "10.4.0",
     "nuxt-windicss": "2.0.11",
     "nuxt3": "3.0.0-27276275.abfbd2f",
-    "postcss": "8.3.11",
+    "postcss": "8.4.5",
     "tailwindcss": "3.0.0-alpha.2",
     "storybook-builder-vite": "0.1.5",
     "storybook-dark-mode": "1.0.8"
