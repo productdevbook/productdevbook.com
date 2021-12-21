@@ -1,8 +1,7 @@
 node_modules
-*.log
-.nuxt
-nuxt.d.ts
-.output
-.env
-.env.local
 .DS_Store
+dist
+dist-ssr
+*.local
+*.log
+.env
