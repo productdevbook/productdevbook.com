@@ -1,0 +1,53 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    // Add under other rules
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "plugins": ["tailwindcss", "prettier"],
+  "rules": {
+    "no-tabs": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-contradicting-classname": "off",
+    
+    "linebreak-style": ["error", "unix"],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-absolute-path": "off",
+    "no-async-promise-executor": "off",
+    "import/no-extraneous-dependencies": "off",
+    "vue/multi-word-component-names": 0,
+    // "vue/no-multiple-template-root": "off",
+    // "vue/html-self-closing": "off",
+    "vue/no-v-html": 0,
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-useless-escape": "off",
+    "no-bitwise": "off",
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    "@typescript-eslint/ban-ts-comment": ["off"],
+    // "vue/no-setup-props-destructure": ["off"],
+    "@typescript-eslint/no-empty-function": ["off"],
+    //can config to 2 if need more then required
+    "@typescript-eslint/no-unused-vars": [0],
+    "no-param-reassign": ["off"],
+    "vue/valid-v-slot": ["error", {
+      "allowModifiers": true
+    }]
+  }
+}
