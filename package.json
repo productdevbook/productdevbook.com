@@ -23,12 +23,14 @@
     "@vue/apollo-composable": "4.0.0-alpha.16",
     "graphql": "16.1.0",
     "graphql-tag": "2.12.6",
+    "nprogress": "0.2.0",
     "unocss": "0.16.1",
     "vue": "3.2.26",
     "vue-router": "4.0.12"
   },
   "devDependencies": {
     "@types/node": "17.0.2",
+    "@types/nprogress": "0.2.0",
     "@typescript-eslint/eslint-plugin": "5.7.0",
     "@typescript-eslint/parser": "5.7.0",
     "@unocss/preset-icons": "0.16.1",
