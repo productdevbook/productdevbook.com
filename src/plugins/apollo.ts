@@ -1,17 +1,18 @@
 import {
   ApolloClient,
   createHttpLink,
-  fromPromise,
   InMemoryCache,
-} from "@apollo/client";
+} from "@apollo/client/core";
 import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import { provideApolloClient } from "@vue/apollo-composable";
 
+const uri = import.meta.env.VITE_GRAPHQL_ENDPOINT;
+
 // HTTP connection to the API
 const httpLink = createHttpLink({
   // You should use an absolute URL here
-  uri: process.env.GRAPHQL_ENDPOINT,
+  uri: uri,
   // credentials: 'include',
 });
 
@@ -28,6 +29,5 @@ const apolloClient = new ApolloClient({
   cache,
   connectToDevTools: true,
 });
-provideApolloClient(apolloClient);
 
 export default apolloClient;
