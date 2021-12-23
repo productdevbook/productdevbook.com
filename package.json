@@ -3,16 +3,23 @@
   "version": "0.0.1",
   "private": true,
   "author": "productdevbook <hi@productdevbook.com> (https://productdevbook.com)",
-
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint": "eslint \"**/*.{vue,ts,js}\""
+    "lint": "eslint \"**/*.{vue,ts,js}\"",
+    "ts": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "3.5.6",
+    "@graphql-codegen/cli": "2.3.0",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/schema-ast": "2.4.0",
+    "@graphql-codegen/typescript": "2.4.1",
+    "@graphql-codegen/typescript-graphql-files-modules": "2.1.0",
+    "@graphql-codegen/typescript-operations": "2.2.1",
+    "@graphql-codegen/typescript-vue-apollo": "3.2.1",
     "@vue/apollo-composable": "4.0.0-alpha.16",
     "graphql": "16.1.0",
     "graphql-tag": "2.12.6",
@@ -40,6 +47,7 @@
     "tailwindcss": "3.0.7",
     "typescript": "4.5.4",
     "vite": "2.7.4",
+    "vite-plugin-pages": "^0.19.6",
     "vue-tsc": "0.30.0"
   },
   "engines": {

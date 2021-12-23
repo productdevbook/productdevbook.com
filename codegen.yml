@@ -1,0 +1,16 @@
+overwrite: true
+
+documents: ./src/graphql/**/*.graphql
+
+# schema: ./schema.graphql
+schema: https://api.productdevbook.com/graphql
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-vue-apollo"
+    config:
+      withCompositionFunctions: true
+      vueApolloComposableImportFrom: '@vue/apollo-composable'
+      vueCompositionApiImportFrom: vue
