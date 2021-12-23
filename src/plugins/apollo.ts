@@ -4,8 +4,6 @@ import {
   InMemoryCache,
 } from "@apollo/client/core";
 import { onError } from "@apollo/client/link/error";
-import { setContext } from "@apollo/client/link/context";
-import { provideApolloClient } from "@vue/apollo-composable";
 
 const uri = import.meta.env.VITE_GRAPHQL_ENDPOINT;
 
