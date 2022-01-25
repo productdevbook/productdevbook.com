@@ -24,7 +24,7 @@
     "graphql": "16.1.0",
     "graphql-tag": "2.12.6",
     "nprogress": "0.2.0",
-    "unocss": "0.16.1",
+    "unocss": "0.22.6",
     "vue": "3.2.26",
     "vue-router": "4.0.12"
   },
@@ -33,7 +33,7 @@
     "@types/nprogress": "0.2.0",
     "@typescript-eslint/eslint-plugin": "5.7.0",
     "@typescript-eslint/parser": "5.7.0",
-    "@unocss/preset-icons": "0.16.1",
+    "@unocss/preset-icons": "0.22.6",
     "@vitejs/plugin-vue": "2.0.1",
     "@vue/eslint-config-prettier": "6.0.0",
     "@vue/eslint-config-typescript": "9.1.0",
