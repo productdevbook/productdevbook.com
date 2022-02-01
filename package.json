@@ -1,65 +1,48 @@
 {
-  "name": "productdevbook",
-  "version": "0.0.1",
-  "private": true,
-  "author": "productdevbook <hi@productdevbook.com> (https://productdevbook.com)",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview --port 3001",
-    "prepare": "husky install",
-    "lint": "eslint \"**/*.{vue,ts,js}\"",
-    "ts": "graphql-codegen --config codegen.yml",
-    "app-dev": "tauri dev",
-    "app-build": "cross-env vite build && tauri build"
-  },
-  "dependencies": {
-    "@apollo/client": "3.5.8",
-    "@graphql-codegen/cli": "2.4.0",
-    "@graphql-codegen/introspection": "2.1.1",
-    "@graphql-codegen/schema-ast": "2.4.1",
-    "@graphql-codegen/typescript": "2.4.2",
-    "@graphql-codegen/typescript-graphql-files-modules": "2.1.1",
-    "@graphql-codegen/typescript-operations": "2.2.3",
-    "@graphql-codegen/typescript-vue-apollo": "3.2.3",
-    "@tauri-apps/api": "1.0.0-beta.8",
-    "@vue/apollo-composable": "4.0.0-alpha.16",
-    "graphql": "16.3.0",
-    "graphql-tag": "2.12.6",
-    "nprogress": "0.2.0",
-    "unocss": "0.22.6",
-    "vue": "3.2.29",
-    "vue-router": "4.0.12"
-  },
-  "devDependencies": {
-    "@tauri-apps/cli": "1.0.0-beta.10",
-    "@types/node": "17.0.2",
-    "@types/nprogress": "0.2.0",
-    "@typescript-eslint/eslint-plugin": "5.10.2",
-    "@typescript-eslint/parser": "5.10.2",
-    "@unocss/preset-icons": "0.22.6",
-    "@vitejs/plugin-vue": "2.1.0",
-    "@vue/eslint-config-prettier": "7.0.0",
-    "@vue/eslint-config-typescript": "10.0.0",
-    "autoprefixer": "10.4.2",
-    "cross-env": "7.0.3",
-    "eslint": "8.8.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-tailwindcss": "3.4.2",
-    "eslint-plugin-vue": "8.4.0",
-    "husky": "7.0.4",
-    "postcss": "8.4.6",
-    "prettier": "2.5.1",
-    "sass": "1.49.4",
-    "tailwindcss": "3.0.18",
-    "typescript": "4.5.5",
-    "vite": "2.7.13",
-    "vite-plugin-pages": "0.20.1",
-    "vite-plugin-vue-layouts": "0.5.0",
-    "vue-tsc": "0.31.1"
-  },
-  "engines": {
-    "node": "^16.0.0"
+    "name": "productdevbookv1",
+    "author": "productdevbook<hi@productdevbook.com>",
+    "version": "0.0.1.beta.2",
+    "private": true,
+    "license": "MIT",
+    "description": "There are many developers who develop the best product and cannot make themselves heard. They will now be able to announce them and the best libraries to developers.",
+    "productName": "Product Dev Book",
+    "homepage": "https://productdevbook.com",
+    "scripts": {
+      "dev:app": "yarn workspace app dev",
+      "build:app": "yarn workspace app build",
+      "start:app": "yarn workspace app serve",
+      "dev:api": "yarn workspace api dev",
+      "build:api": "yarn workspace api build",
+      "start:api": "yarn workspace api start",
+      "dev": "concurrently --kill-others-on-fail \"yarn dev:app\"  \"yarn dev:api\"",
+      "build": "concurrently --kill-others-on-fail \"yarn build:app\"  \"yarn build:api\"",
+      "changelog": "npx auto-changelog --output CHANGELOG.md --template keepachangelog --commit-limit false -u --sort-commits date-desc --hide-credit"
+    },
+    "workspaces": [
+      "packages/*"
+    ],
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.{js,ts,jsx,tsx,vue}": [
+        "prettier --write",
+        "eslint --fix"
+      ]
+    },
+    "dependencies": {
+      "concurrently": "6.1.0"
+    },
+    "devDependencies": {
+      "husky": "4",
+      "lint-staged": "11.0.1",
+      "prettier": "2.3.2"
+    },
+    "engines": {
+      "node": ">= 16.13.0",
+      "npm": ">= 8.1.0",
+      "yarn": ">= 1.22.0"
+    }
   }
-}
