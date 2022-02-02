@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "tauri-apps.tauri-vscode",
+        "redhat.vscode-yaml",
+        "graphql.vscode-graphql",
+        "johnsoncodehk.volar"
+    ]
+}
