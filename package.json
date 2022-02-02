@@ -14,6 +14,9 @@
       "dev:api": "yarn workspace api dev",
       "build:api": "yarn workspace api build",
       "start:api": "yarn workspace api start",
+      "prepare": "husky install",
+      "lint": "yarn workspace app lint && yarn workspace api lint",
+      "lint:fix": "yarn workspace app lint --fix && yarn workspace api lint --fix",
       "dev": "concurrently --kill-others-on-fail \"yarn dev:app\"  \"yarn dev:api\"",
       "build": "concurrently --kill-others-on-fail \"yarn build:app\"  \"yarn build:api\"",
       "changelog": "npx auto-changelog --output CHANGELOG.md --template keepachangelog --commit-limit false -u --sort-commits date-desc --hide-credit"
@@ -21,24 +24,13 @@
     "workspaces": [
       "packages/*"
     ],
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
-    "lint-staged": {
-      "*.{js,ts,jsx,tsx,vue}": [
-        "prettier --write",
-        "eslint --fix"
-      ]
-    },
     "dependencies": {
       "concurrently": "6.1.0"
     },
     "devDependencies": {
-      "husky": "4",
+      "husky": "7.0.4",
       "lint-staged": "11.0.1",
-      "prettier": "2.3.2"
+      "prettier": "2.5.1"
     },
     "engines": {
       "node": ">= 16.13.0",

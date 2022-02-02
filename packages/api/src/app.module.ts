@@ -32,7 +32,6 @@ const gqlErrorFormatter = (error: GraphQLError) => {
   }
 };
 
-
 @Module({
   imports: [
     AuthModule,
@@ -64,7 +63,6 @@ const gqlErrorFormatter = (error: GraphQLError) => {
           playground: configService.get('GRAPHQL_PLAYGROUND') || true,
           context: ({ req }) => ({ req }),
           formatError: (error: GraphQLError) => gqlErrorFormatter(error),
-
         };
       },
       inject: [ConfigService],
@@ -73,4 +71,4 @@ const gqlErrorFormatter = (error: GraphQLError) => {
   controllers: [AppController],
   providers: [AppService, AppResolver],
 })
-export class AppModule { }
+export class AppModule {}

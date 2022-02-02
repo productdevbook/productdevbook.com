@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="py-10 px-4 text-center dark:text-gray-200 text-teal-700">
+  <main class="py-10 px-4 text-center text-teal-700 dark:text-gray-200">
     <div>
       <p class="text-4xl">
         <carbon-warning class="inline-block" />

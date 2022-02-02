@@ -3,9 +3,9 @@ import { SignInInput } from './inputs/sign-in.input';
 
 @Resolver()
 export class AuthResolver {
-    @Mutation((returns) => String)
-    async signIn(@Args('data') data: SignInInput) {
-        return 'Token';
-    }
-
+  @Mutation(() => String)
+  async signIn(@Args('data') data: SignInInput) {
+    console.log(data);
+    return 'Token';
+  }
 }
