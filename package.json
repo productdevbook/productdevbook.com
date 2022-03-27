@@ -7,5 +7,6 @@
   },
   "devDependencies": {
     "nuxt3": "latest"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
