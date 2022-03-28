@@ -32,10 +32,10 @@ const startServer = apolloServer.start();
 export default cors(async (req: IncomingMessage, res: ServerResponse) => {
   res.setHeader("Access-Control-Allow-Origin", req.headers.host);
   if (checkURL(req)) {
-    if (req.method === "OPTIONS") {
-      res.end();
-      return;
-    }
+    // if (req.method === "OPTIONS") {
+    //   res.end();
+    //   return;
+    // }
     await startServer;
     await await apolloServer.createHandler({
       path: "/",
