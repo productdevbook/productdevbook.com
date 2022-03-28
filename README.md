@@ -16,6 +16,29 @@ It will be a great resource site for beginner programmers.
 
 My main goal is to bring the best products to the top in the endless software world of developers. I understand you very well. We will achieve this together. Your best codes will find the best people.
 
+## Setup
+
+Make sure to install the dependencies
+
+```bash
+yarn install
+```
+
+## Development
+
+Start the development server on http://localhost:3000
+
+```bash
+yarn dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+yarn build
+```
 TODO
 - [ ] nuxt 3 change
 - [ ] graphql server api install nuxt 3 with

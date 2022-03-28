@@ -1,17 +1,13 @@
 node_modules
-.DS_Store
-dist
-dist-ssr
-*.local
 *.log
+.nuxt
+nuxt.d.ts
+.output
 .env
 
-
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-.pnpm-debug.log*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions

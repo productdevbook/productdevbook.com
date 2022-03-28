@@ -1,40 +1,24 @@
 {
-    "name": "productdevbookv1",
-    "author": "productdevbook<hi@productdevbook.com>",
-    "version": "0.0.1.beta.2",
-    "private": true,
-    "license": "MIT",
-    "description": "There are many developers who develop the best product and cannot make themselves heard. They will now be able to announce them and the best libraries to developers.",
-    "productName": "Product Dev Book",
-    "homepage": "https://productdevbook.com",
-    "scripts": {
-      "dev:app": "yarn workspace app dev",
-      "build:app": "yarn workspace app build",
-      "start:app": "yarn workspace app serve",
-      "dev:api": "yarn workspace api dev",
-      "build:api": "yarn workspace api build",
-      "start:api": "yarn workspace api start",
-      "prepare": "husky install",
-      "lint": "yarn workspace app lint && yarn workspace api lint",
-      "lint:fix": "yarn workspace app lint --fix && yarn workspace api lint --fix",
-      "dev": "concurrently --kill-others-on-fail \"yarn dev:app\"  \"yarn dev:api\"",
-      "build": "concurrently --kill-others-on-fail \"yarn build:app\"  \"yarn build:api\"",
-      "changelog": "npx auto-changelog --output CHANGELOG.md --template keepachangelog --commit-limit false -u --sort-commits date-desc --hide-credit"
-    },
-    "workspaces": [
-      "packages/*"
-    ],
-    "dependencies": {
-      "concurrently": "6.5.1"
-    },
-    "devDependencies": {
-      "husky": "7.0.4",
-      "lint-staged": "11.2.6",
-      "prettier": "2.5.1"
-    },
-    "engines": {
-      "node": ">= 16.13.0",
-      "npm": ">= 8.1.0",
-      "yarn": ">= 1.22.0"
-    }
+  "private": true,
+  "author": "productdevbook<hi@productdevbook.com>",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "There are many developers who develop the best product and cannot make themselves heard. They will now be able to announce them and the best libraries to developers.",
+  "productName": "Product Dev Book",
+  "homepage": "https://productdevbook.com",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "nuxt3": "3.0.0-27470397.9ebea90"
+  },
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "apollo-server-micro": "3.6.6",
+    "graphql": "16.3.0",
+    "micro": "9.3.4",
+    "micro-cors": "0.1.1"
   }
+}

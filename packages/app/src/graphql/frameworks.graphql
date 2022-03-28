@@ -1,8 +1,0 @@
-query Framework {
-  framework {
-    id
-    logo
-    slug
-    title
-  }
-}
