@@ -39,3 +39,9 @@ Build the application for production:
 ```bash
 yarn build
 ```
+TODO
+- [ ] nuxt 3 change
+- [ ] graphql server api install nuxt 3 with
+- [ ] prisma with postgresql install
+- [ ] github auth
+- [ ] ...
