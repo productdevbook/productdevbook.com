@@ -14,27 +14,27 @@ const resolvers = {
     },
   },
 };
+// @TODO add cors
+// const cors = Cors({origin});
 
-const cors = Cors();
-
-const whitelist = [
-  "localhost:3000",
-  "http://localhost:3000",
-  "https://studio.apollographql.com",
-  "https://productdevbook.com",
-  "productdevbook.com",
-  "studio.apollographql.com",
-  "http://127.0.0.1",
-  "http://localhost:3000/api/graphql",
-  process.env.CORS_ORIGIN,
-];
+// const whitelist = [
+//   "localhost:3000",
+//   "http://localhost:3000",
+//   "https://studio.apollographql.com",
+//   "https://productdevbook.com",
+//   "productdevbook.com",
+//   "studio.apollographql.com",
+//   "http://127.0.0.1",
+//   "http://localhost:3000/api/graphql",
+//   process.env.CORS_ORIGIN,
+// ];
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 const startServer = apolloServer.start();
-export default cors(async (req: IncomingMessage, res: ServerResponse) => {
+export default async (req: IncomingMessage, res: ServerResponse) => {
   console.log(req.headers.host)
   res.setHeader("Access-Control-Allow-Origin", req.headers.host);
-  if (checkURL(req)) {
+  
     if (req.method === "OPTIONS") {
       res.end();
       return;
@@ -43,17 +43,15 @@ export default cors(async (req: IncomingMessage, res: ServerResponse) => {
     await await apolloServer.createHandler({
       path: "/",
     })(req, res);
-  } else {
-    res.end();
-  }
-});
 
-function checkURL(req: IncomingMessage) {
-  const reqOrigin = req.headers.host;
-  console.log(whitelist.indexOf(reqOrigin))
-  if (!reqOrigin || whitelist.indexOf(reqOrigin) !== -1) {
-    return true;
-  } else {
-    new Error("Not allowed by CORS");
-  }
 }
+
+// function checkURL(req: IncomingMessage) {
+//   const reqOrigin = req.headers.host;
+//   console.log(whitelist.indexOf(reqOrigin))
+//   if (!reqOrigin || whitelist.indexOf(reqOrigin) !== -1) {
+//     return true;
+//   } else {
+//     new Error("Not allowed by CORS");
+//   }
+// }
