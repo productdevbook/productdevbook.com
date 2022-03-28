@@ -6,13 +6,13 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "nuxt3": "3.0.0-27470397.9ebea90"
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
-    "apollo-server-micro": "^3.6.6",
-    "graphql": "^16.3.0",
-    "micro": "^9.3.4",
-    "micro-cors": "^0.1.1"
+    "apollo-server-micro": "3.6.6",
+    "graphql": "16.3.0",
+    "micro": "9.3.4",
+    "micro-cors": "0.1.1"
   }
 }

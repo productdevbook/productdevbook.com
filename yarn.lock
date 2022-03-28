@@ -1444,7 +1444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-server-micro@npm:^3.6.6":
+"apollo-server-micro@npm:3.6.6":
   version: 3.6.6
   resolution: "apollo-server-micro@npm:3.6.6"
   dependencies:
@@ -3376,7 +3376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.3.0":
+"graphql@npm:16.3.0":
   version: 16.3.0
   resolution: "graphql@npm:16.3.0"
   checksum: ba540641e9cd2a8de5b989ff1433b015f232fa73aaef478d6709c1339cd43113347917acb965a5799c004667687852fc8ff0cfaa935eb26374c91c1fd7fdaeb1
@@ -4374,14 +4374,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micro-cors@npm:^0.1.1":
+"micro-cors@npm:0.1.1":
   version: 0.1.1
   resolution: "micro-cors@npm:0.1.1"
   checksum: adf8a2b613ee963ca02bf12bd1a89d31602420094f88d23d2dc467fdc7131f44cf693704860685cf1b3a8058cf9349089ef795d03470c139a997b5c3dac39641
   languageName: node
   linkType: hard
 
-"micro@npm:^9.3.4":
+"micro@npm:9.3.4":
   version: 9.3.4
   resolution: "micro@npm:9.3.4"
   dependencies:
@@ -4991,7 +4991,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt3@npm:latest":
+"nuxt3@npm:3.0.0-27470397.9ebea90":
   version: 3.0.0-27470397.9ebea90
   resolution: "nuxt3@npm:3.0.0-27470397.9ebea90"
   dependencies:
@@ -6023,11 +6023,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    apollo-server-micro: ^3.6.6
-    graphql: ^16.3.0
-    micro: ^9.3.4
-    micro-cors: ^0.1.1
-    nuxt3: latest
+    apollo-server-micro: 3.6.6
+    graphql: 16.3.0
+    micro: 9.3.4
+    micro-cors: 0.1.1
+    nuxt3: 3.0.0-27470397.9ebea90
   languageName: unknown
   linkType: soft
 
