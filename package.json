@@ -1,5 +1,11 @@
 {
   "private": true,
+  "author": "productdevbook<hi@productdevbook.com>",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "There are many developers who develop the best product and cannot make themselves heard. They will now be able to announce them and the best libraries to developers.",
+  "productName": "Product Dev Book",
+  "homepage": "https://productdevbook.com",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
