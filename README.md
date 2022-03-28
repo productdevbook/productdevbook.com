@@ -32,6 +32,9 @@ Start the development server on http://localhost:3000
 yarn dev
 ```
 
+## GRAPHQL URL
+Start the development server on http://localhost:3000/api/graphql
+
 ## Production
 
 Build the application for production:
@@ -40,8 +43,8 @@ Build the application for production:
 yarn build
 ```
 TODO
-- [ ] nuxt 3 change
-- [ ] graphql server api install nuxt 3 with
+- [x] nuxt 3 change
+- [x] graphql server api install nuxt 3 with
 - [ ] prisma with postgresql install
 - [ ] github auth
 - [ ] ...
