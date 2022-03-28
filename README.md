@@ -15,3 +15,10 @@ In the future, beginners or expert developers will be able to create an account 
 It will be a great resource site for beginner programmers.
 
 My main goal is to bring the best products to the top in the endless software world of developers. I understand you very well. We will achieve this together. Your best codes will find the best people.
+
+TODO
+- [ ] nuxt 3 change
+- [ ] graphql server api install nuxt 3 with
+- [ ] prisma with postgresql install
+- [ ] github auth
+- [ ] ...
