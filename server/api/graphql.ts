@@ -13,7 +13,7 @@ const server = createServer<{
     `,
     resolvers: {
       Query: {
-        hello: () => 'Hello Hello Hello'
+        hello: () => 'Nuxt 3 with graphql server'
       }
     }
   },

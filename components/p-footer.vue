@@ -52,7 +52,7 @@ export default {
         { name: "Blog", href: "#" },
         { name: "Jobs", href: "#" },
         { name: "Press", href: "#" },
-        { name: "Api", href: "http://localhost:3000/api/graphql" },
+        { name: "Api", href: "https://productdevbook.com/api/graphql" },
         { name: "Partners", href: "#" },
       ],
       social: [
