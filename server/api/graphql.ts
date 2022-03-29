@@ -29,29 +29,33 @@ const whitelist = [
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 const startServer = apolloServer.start();
 export default cors(async (req: IncomingMessage, res: ServerResponse) => {
-  checkURL(req);
-    if (req.method === "OPTIONS") {
-      res.end();
-      return;
-    }
-    if (checkURL(req)) {
-      //@ts-ignore
-      res.setHeader("Access-Control-Allow-Credentials", true);
-      res.setHeader("Access-Control-Allow-Origin", req.headers.origin || req.headers.host);
-      console.log(res.getHeaders())
-      await startServer;
-      await await apolloServer.createHandler({
-        path: "/",
-      })(req, res);
-    } else {
-      res.end('You are not allowed to access');
-    }
-})
-function checkURL(req: IncomingMessage): boolean {
   const reqOrigin = req.headers.origin || req.headers.host;
-  console.log(reqOrigin)
+  console.log(reqOrigin, 'reqOrigin');
+  if (!checkURL(req, reqOrigin)) {
+    res.end("You are not allowed to access");
+  }
+  //@ts-ignore
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    reqOrigin
+  );
+  console.log(res.getHeaders(), 'res.getHeaders()');
+
+  if (req.method === "OPTIONS") {
+    res.end();
+    return;
+  }
+  await startServer;
+  await await apolloServer.createHandler({
+    path: "/",
+  })(req, res);
+});
+function checkURL(req: IncomingMessage, reqOrigin: string): boolean {
+
+  console.log(reqOrigin);
   if (reqOrigin && whitelist.indexOf(reqOrigin) !== -1) {
-    console.log(reqOrigin, 'is allowed')
+    console.log(reqOrigin, "is allowed");
     return true;
   } else {
     new Error("Not allowed by CORS");
