@@ -1,5 +1,13 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
   </div>
 </template>
+
+<style>
+body {
+  @apply bg-zinc-900
+}
+</style>

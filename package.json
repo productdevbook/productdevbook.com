@@ -12,6 +12,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "5.0.2",
     "nuxt3": "3.0.0-27474482.90415d4"
   },
   "packageManager": "yarn@3.2.0",
