@@ -49,7 +49,9 @@ export default cors(async (req: IncomingMessage, res: ServerResponse) => {
 })
 function checkURL(req: IncomingMessage): boolean {
   const reqOrigin = req.headers.origin || req.headers.host;
+  console.log(reqOrigin)
   if (reqOrigin && whitelist.indexOf(reqOrigin) !== -1) {
+    console.log(reqOrigin, 'is allowed')
     return true;
   } else {
     new Error("Not allowed by CORS");
