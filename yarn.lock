@@ -38,10 +38,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollographql/apollo-tools@npm:^0.5.1":
-  version: 0.5.2
-  resolution: "@apollographql/apollo-tools@npm:0.5.2"
-  checksum: b6a1b49c4c90498c3d41cc0fc4462eadb8905377007e4b43eb373d8a9ca8c161236df04ced55a727d98ad08186e9f25f92497ccf32e089c96358bee16b87333f
+"@apollographql/apollo-tools@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "@apollographql/apollo-tools@npm:0.5.3"
+  peerDependencies:
+    graphql: ^14.2.1 || ^15.0.0 || ^16.0.0
+  checksum: 652f16f8ae4afb65a2cb62a47e46882f49368f8f2c115f421773c3f8aa47b466ab9a6758fc18138495bd010baea5fda05d3c313edd11c4f4b3e8f8783b54d5a2
   languageName: node
   linkType: hard
 
@@ -738,7 +740,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27474800.8dd77d7, @nuxt/kit@npm:@nuxt/kit-edge@latest":
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27477548.a9381a0":
+  version: 3.0.0-27477548.a9381a0
+  resolution: "@nuxt/kit-edge@npm:3.0.0-27477548.a9381a0"
+  dependencies:
+    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27477548.a9381a0"
+    c12: ^0.2.4
+    consola: ^2.15.3
+    defu: ^6.0.0
+    globby: ^13.1.1
+    hash-sum: ^2.0.0
+    ignore: ^5.2.0
+    jiti: ^1.13.0
+    knitwork: ^0.1.1
+    lodash.template: ^4.5.0
+    mlly: ^0.5.1
+    pathe: ^0.2.0
+    pkg-types: ^0.3.2
+    scule: ^0.2.1
+    semver: ^7.3.5
+    unctx: ^1.1.3
+    unimport: ^0.1.3
+    untyped: ^0.4.3
+  checksum: 89cea009be25670d88dfe29cea9e55188c016692e247e2fa982f2bc29d7b26303f66a00a976d967db0da717993ca95ffd7ff9aad9a4e9299942852eab51fb444
+  languageName: node
+  linkType: hard
+
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
   version: 3.0.0-27474800.8dd77d7
   resolution: "@nuxt/kit-edge@npm:3.0.0-27474800.8dd77d7"
   dependencies:
@@ -764,14 +792,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27474800.8dd77d7":
-  version: 3.0.0-27474800.8dd77d7
-  resolution: "@nuxt/nitro-edge@npm:3.0.0-27474800.8dd77d7"
+"@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27477548.a9381a0":
+  version: 3.0.0-27477548.a9381a0
+  resolution: "@nuxt/nitro-edge@npm:3.0.0-27477548.a9381a0"
   dependencies:
     "@cloudflare/kv-asset-handler": ^0.2.0
     "@netlify/functions": ^1.0.0
     "@nuxt/devalue": ^2.0.0
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27474800.8dd77d7"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27477548.a9381a0"
     "@nuxt/ui-templates": "npm:@nuxt/ui-templates-edge@latest"
     "@rollup/plugin-alias": ^3.1.9
     "@rollup/plugin-commonjs": ^21.0.3
@@ -826,7 +854,7 @@ __metadata:
     unstorage: ^0.3.3
     vue-bundle-renderer: ^0.3.5
     vue-server-renderer: ^2.6.14
-  checksum: 10425fd125f00b6a027a0c654f45bc2f79855481824bfa44b07d699d63da82b00dc6812394cc3f8fbf44a03967d564d1ea53ec26959e9b004863044c29a6bb86
+  checksum: 8c7b84dd56df0028e72d26e5c3d157b5536a0775c360e73331d9fcd8333d36df832a81ce2d698655f764c1ab1a51a35155c5b16373f8151a377a9a1c6c5443e2
   languageName: node
   linkType: hard
 
@@ -864,6 +892,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27477548.a9381a0":
+  version: 3.0.0-27477548.a9381a0
+  resolution: "@nuxt/schema-edge@npm:3.0.0-27477548.a9381a0"
+  dependencies:
+    c12: ^0.2.4
+    create-require: ^1.1.1
+    defu: ^6.0.0
+    jiti: ^1.13.0
+    pathe: ^0.2.0
+    postcss-import-resolver: ^2.0.0
+    scule: ^0.2.1
+    std-env: ^3.0.1
+    ufo: ^0.8.1
+    unimport: ^0.1.3
+  checksum: b0f7176a6a52f27ec5d36226c853e387e00494718520583ad75df354e3738423ad8ae7750058359c147590d5181e3bfd54e37d674ba710a1e086ab762be7b675
+  languageName: node
+  linkType: hard
+
 "@nuxt/ui-templates@npm:@nuxt/ui-templates-edge@latest":
   version: 0.0.0-27455683.83d2457
   resolution: "@nuxt/ui-templates-edge@npm:0.0.0-27455683.83d2457"
@@ -871,11 +917,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27474800.8dd77d7":
-  version: 3.0.0-27474800.8dd77d7
-  resolution: "@nuxt/vite-builder-edge@npm:3.0.0-27474800.8dd77d7"
+"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27477548.a9381a0":
+  version: 3.0.0-27477548.a9381a0
+  resolution: "@nuxt/vite-builder-edge@npm:3.0.0-27477548.a9381a0"
   dependencies:
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27474800.8dd77d7"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27477548.a9381a0"
     "@vitejs/plugin-vue": ^2.2.4
     "@vitejs/plugin-vue-jsx": ^1.3.8
     autoprefixer: ^10.4.4
@@ -900,10 +946,10 @@ __metadata:
     ufo: ^0.8.1
     unplugin: ^0.6.0
     vite: ^2.8.6
-    vite-node: ^0.7.12
+    vite-node: ^0.8.0
   peerDependencies:
     vue: 3.2.31
-  checksum: 698bd1a890a91a56aaa1f267a132be247858a077168f7da8b8b97eaf5a2287a7f000dd16867874243f2ae2ca4770599a95367b54c9f61e24d823e66382ce6a9c
+  checksum: 600e19e6e0b8fd73bc4fd6c1b9e5793fde606200eef3fa908ee6a9d21acecab1ad95ea3dea89e68713850fdeee48211945e687e1692afb61e4d0bae4ab572684
   languageName: node
   linkType: hard
 
@@ -1653,11 +1699,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-server-core@npm:^3.6.6":
-  version: 3.6.6
-  resolution: "apollo-server-core@npm:3.6.6"
+"apollo-server-core@npm:^3.6.7":
+  version: 3.6.7
+  resolution: "apollo-server-core@npm:3.6.7"
   dependencies:
-    "@apollographql/apollo-tools": ^0.5.1
+    "@apollographql/apollo-tools": ^0.5.3
     "@apollographql/graphql-playground-html": 1.6.29
     "@graphql-tools/mock": ^8.1.2
     "@graphql-tools/schema": ^8.0.0
@@ -1679,7 +1725,7 @@ __metadata:
     uuid: ^8.0.0
   peerDependencies:
     graphql: ^15.3.0 || ^16.0.0
-  checksum: 8c31ca63c4d2244da03c01d9d997b00fa1e937580ebd41c2c75fc1bd6f81bee84856c528b96e299ee876af58fc53b0d5c9c25433036dcd6b5111997caf7487ce
+  checksum: 4ffd0a772f29c7b0a30fe445b7c71c7b32b782fa7992753708d1cdc7cf3b249f602b23e06e2dbe64ed54f65bafe7d38afc1f3e9ec828518edff348525062c6c0
   languageName: node
   linkType: hard
 
@@ -1701,17 +1747,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-server-micro@npm:3.6.6":
-  version: 3.6.6
-  resolution: "apollo-server-micro@npm:3.6.6"
+"apollo-server-micro@npm:3.6.7":
+  version: 3.6.7
+  resolution: "apollo-server-micro@npm:3.6.7"
   dependencies:
     "@hapi/accept": ^5.0.2
-    apollo-server-core: ^3.6.6
+    apollo-server-core: ^3.6.7
     apollo-server-types: ^3.5.2
     type-is: ^1.6.18
   peerDependencies:
     micro: ^9.3.4
-  checksum: c27786f9c3eda04797d6f794333e065d4ea6535478f17c2d1bdc35f27391f399529e3c6d27a1dc0fdfe45cf04ab44f0b04c70245fc9e1928ec1498c7be389916
+  checksum: 8cb1f0095824e2538b4eb2bba78a89363395ffb19fecc225126511290220f5b103d630324ea63f9c9ade13488084ed8c92b82c9300ad427fc226348e13530809
   languageName: node
   linkType: hard
 
@@ -5696,9 +5742,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxi@npm:nuxi-edge@3.0.0-27474800.8dd77d7":
-  version: 3.0.0-27474800.8dd77d7
-  resolution: "nuxi-edge@npm:3.0.0-27474800.8dd77d7"
+"nuxi@npm:nuxi-edge@3.0.0-27477548.a9381a0":
+  version: 3.0.0-27477548.a9381a0
+  resolution: "nuxi-edge@npm:3.0.0-27477548.a9381a0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -5706,19 +5752,19 @@ __metadata:
       optional: true
   bin:
     nuxi-edge: ./bin/nuxi.mjs
-  checksum: 28351dc39eed4c6347b83fa30a0562715790cec272a42a256656252d55733a3f0f98a740174105571f9e4e6520535c27d7f5636be39baaf62d8162857186a15f
+  checksum: 9e8afddb81e47a12a9f89c01d90b90278426bb59029ed16560cd63619f6bd97517f3eb92c7d97776b577fa9870e799f05979541d5912bfc934003432f36da0c8
   languageName: node
   linkType: hard
 
-"nuxt3@npm:3.0.0-27474800.8dd77d7":
-  version: 3.0.0-27474800.8dd77d7
-  resolution: "nuxt3@npm:3.0.0-27474800.8dd77d7"
+"nuxt3@npm:3.0.0-27477548.a9381a0":
+  version: 3.0.0-27477548.a9381a0
+  resolution: "nuxt3@npm:3.0.0-27477548.a9381a0"
   dependencies:
-    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27474800.8dd77d7"
-    "@nuxt/nitro": "npm:@nuxt/nitro-edge@3.0.0-27474800.8dd77d7"
-    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27474800.8dd77d7"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27477548.a9381a0"
+    "@nuxt/nitro": "npm:@nuxt/nitro-edge@3.0.0-27477548.a9381a0"
+    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-27477548.a9381a0"
     "@nuxt/ui-templates": "npm:@nuxt/ui-templates-edge@latest"
-    "@nuxt/vite-builder": "npm:@nuxt/vite-builder-edge@3.0.0-27474800.8dd77d7"
+    "@nuxt/vite-builder": "npm:@nuxt/vite-builder-edge@3.0.0-27477548.a9381a0"
     "@vue/reactivity": ^3.2.31
     "@vue/shared": ^3.2.31
     "@vueuse/head": ^0.7.5
@@ -5736,7 +5782,7 @@ __metadata:
     magic-string: ^0.26.1
     mlly: ^0.5.1
     nitropack: "npm:nitropack-edge@latest"
-    nuxi: "npm:nuxi-edge@3.0.0-27474800.8dd77d7"
+    nuxi: "npm:nuxi-edge@3.0.0-27477548.a9381a0"
     ohash: ^0.1.0
     ohmyfetch: ^0.4.15
     pathe: ^0.2.0
@@ -5751,7 +5797,7 @@ __metadata:
   bin:
     nuxi: ./bin/nuxt.mjs
     nuxt: ./bin/nuxt.mjs
-  checksum: 6a752a53ddaa125492cdd5d315453378a7783051cea3b36b785ec603be110f1601295a651787f30478cfcd531b7272b86e8c6c3a844c8db543b441019cee1b3e
+  checksum: fd0632258cf37646e17fe8ab6dcf2f532047b2d063f18523fac7e961b40c9a22b4715a59540d85301146969be9f481d3bbf5094a1680ad1a9ffc38992c784d15
   languageName: node
   linkType: hard
 
@@ -6988,11 +7034,11 @@ __metadata:
   dependencies:
     "@graphql-yoga/node": 2.0.0
     "@nuxtjs/tailwindcss": 5.0.2
-    apollo-server-micro: 3.6.6
+    apollo-server-micro: 3.6.7
     graphql: 16.3.0
     micro: 9.3.4
     micro-cors: 0.1.1
-    nuxt3: 3.0.0-27474800.8dd77d7
+    nuxt3: 3.0.0-27477548.a9381a0
   languageName: unknown
   linkType: soft
 
@@ -8036,9 +8082,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-node@npm:^0.7.12":
-  version: 0.7.13
-  resolution: "vite-node@npm:0.7.13"
+"vite-node@npm:^0.8.0":
+  version: 0.8.1
+  resolution: "vite-node@npm:0.8.1"
   dependencies:
     kolorist: ^1.5.1
     minimist: ^1.2.6
@@ -8047,7 +8093,7 @@ __metadata:
     vite: ^2.8.6
   bin:
     vite-node: vite-node.mjs
-  checksum: b4ea8da50711b4156e983f77583825cd5db1f78dde8b0c4bee7b7e15b54c90d1d947268b25df42aadb64ef4d00dbf0d7d6561edd02bbc2515d61bf7b82f618a2
+  checksum: 567a7c5326a52755c09639ac0294ac1b2fb1378a4f1660684e83ab3d9982069a008dce129b1c15640f51bb78f4f762c71b8a0b0a7d2600b06b3de658c432218d
   languageName: node
   linkType: hard
 
