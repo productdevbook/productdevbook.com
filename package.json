@@ -9,15 +9,19 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "dbformat": "prisma db push prisma db push --force-reset --preview-feature"
   },
   "devDependencies": {
+    "@nuxtjs/supabase": "0.1.4",
     "@nuxtjs/tailwindcss": "5.0.2",
-    "nuxt3": "3.0.0-27474800.8dd77d7"
+    "nuxt3": "3.0.0-27474800.8dd77d7",
+    "prisma": "3.11.1"
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
     "@graphql-yoga/node": "2.0.0",
+    "@prisma/client": "3.11.1",
     "apollo-server-micro": "3.6.6",
     "graphql": "16.3.0",
     "micro": "9.3.4",
