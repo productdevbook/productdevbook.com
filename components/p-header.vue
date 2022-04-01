@@ -1,6 +1,6 @@
 <template>
 <div class="h-20 bg-zinc-700 w-full flex flex-none">
-      <button @click="login('github')">Login with GitHub</button>
+      <AtomLoginCard @click="login('github')">Login with GitHub</AtomLoginCard>
 </div>
 </template>
 
