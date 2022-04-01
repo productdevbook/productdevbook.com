@@ -20,7 +20,7 @@ export class UserResolver {
   }
   @Mutation(() => User)
   async createUser(
-    @Arg('data') data: CreateUserInput,
+    @Arg("data", () => CreateUserInput) data: CreateUserInput,
     @Ctx() ctx: any,
     @Info() info: any,
     @Root() root: any
