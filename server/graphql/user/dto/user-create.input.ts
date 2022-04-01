@@ -2,7 +2,7 @@ import { IsEmail, IsString, MaxLength, MinLength } from "class-validator";
 import { Field, InputType } from "type-graphql";
 
 @InputType()
-export class CreateUser {
+export class CreateUserInput {
   @Field(() => String, { nullable: false, description: "User email" })
   username: string;
 

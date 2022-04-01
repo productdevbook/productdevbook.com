@@ -10,7 +10,7 @@ import {
   Root,
 } from "type-graphql";
 import { User } from "~/server/entities/user.entity";
-import { CreateUser } from "./dto/user-create.input";
+import { CreateUserInput } from "./dto/user-create.input";
 
 @Resolver((of) => User)
 export class UserResolver {
@@ -20,7 +20,7 @@ export class UserResolver {
   }
   @Mutation(() => User)
   async createUser(
-    @Arg('data') data: CreateUser,
+    @Arg('data') data: CreateUserInput,
     @Ctx() ctx: any,
     @Info() info: any,
     @Root() root: any
