@@ -39,11 +39,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, h } from "vue";
+import { defineComponent, h, shallowRef } from "vue";
 
 export default {
   setup() {
-    const navigation = ref<{
+    const navigation = shallowRef<{
       main: { name: string; href: string }[];
       social: { name: string; href: string; icon: any }[];
     }>({
