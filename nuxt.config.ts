@@ -15,7 +15,6 @@ export default defineNuxtConfig({
       compilerOptions: {
         experimentalDecorators: true,
         emitDecoratorMetadata: true,
-        lib: ["es2018", "esnext.asynciterable"],
       },
     },
   },
