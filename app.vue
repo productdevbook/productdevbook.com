@@ -5,3 +5,8 @@
     </NuxtLayout>
   </div>
 </template>
+
+
+<style lang="postcss">
+
+</style>

@@ -13,14 +13,14 @@
     "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "5.0.2",
-    "nuxt": "3.0.0-rc.2"
+    "@nuxtjs/tailwindcss": "5.1.2",
+    "nuxt": "3.0.0-rc.3"
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
-    "@graphql-yoga/node": "2.0.0",
-    "apollo-server-micro": "3.6.7",
-    "graphql": "16.3.0",
+    "@graphql-yoga/node": "2.8.0",
+    "apollo-server-micro": "3.8.1",
+    "graphql": "16.5.0",
     "micro": "9.3.4",
     "micro-cors": "0.1.1"
   }
