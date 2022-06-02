@@ -9,11 +9,12 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "5.0.2",
-    "nuxt3": "3.0.0-27480376.fdd38f9"
+    "nuxt": "3.0.0-rc.2"
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
