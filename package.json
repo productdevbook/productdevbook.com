@@ -16,7 +16,7 @@
     "@nuxtjs/tailwindcss": "5.1.2",
     "nuxt": "3.0.0-rc.3"
   },
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.1",
   "dependencies": {
     "@graphql-yoga/node": "2.8.0",
     "apollo-server-micro": "3.8.1",
