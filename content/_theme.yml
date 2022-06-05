@@ -1,0 +1,43 @@
+title: "Product Dev Book"
+
+layout: docs
+
+url: "https://productdevbook.com/"
+
+description: Add Tailwind CSS to your Nuxt application in seconds.
+
+socials:
+  twitter: "productdevbook"
+  github: "productdevbook"
+
+debug: false
+
+colors:
+  primary: "#38b2ac"
+
+github:
+  root: content
+  edit: true
+  releases: true
+
+cover: false
+
+header:
+  title: 'productdevbook'
+  logo: false
+
+footer:
+  credits:
+    icon: IconDocus
+    text: Powered by Docus
+    href: https://docus.com
+  icons:
+  - label: NuxtJS
+    href: https://nuxtjs.org
+    component: IconNuxt
+  - label: NestJS
+    href: https://nuxtjs.org
+    component: IconNest
+  - label: Vue Telescope
+    href: https://vuetelescope.com
+    component: IconVueTelescope

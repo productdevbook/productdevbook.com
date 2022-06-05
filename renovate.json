@@ -1,8 +1,6 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:base", "@nuxtjs"],
   "labels": ["dependencies"],
-  "assignees": ["productdevbook"],
-  "reviewers": ["productdevbook"],
   "packageRules": [
     {
       "groupName": "Types",
@@ -49,5 +47,8 @@
       "packageNames": ["vue-imgix"],
       "groupName": "Images packages"
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
