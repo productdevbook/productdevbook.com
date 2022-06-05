@@ -27,7 +27,7 @@ export default defineNuxtConfig({
       releases: true,
       edit: true,
       root: "content"
-    }
+    },
   },
   github: {
     owner: 'productdevbook',

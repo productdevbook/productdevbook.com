@@ -32,12 +32,21 @@ footer:
     text: Powered by Docus
     href: https://docus.com
   icons:
-  - label: NuxtJS
-    href: https://nuxtjs.org
+  - label: Vue
+    href: https://vuejs.org
     component: IconNuxt
   - label: NestJS
-    href: https://nuxtjs.org
-    component: IconNest
+    href: https://nestjs.com
+    icon: simple-icons-nestjs
+  - label: GraphQL
+    href: https://graphql.org
+    icon: 
+  - label: Capacitor
+    href: https://capacitorjs.com/
+    icon: simple-icons-capacitor
+  - label: Ionic
+    href: https://ionicframework.com/
+    icon: simple-icons-ionic
   - label: Vue Telescope
     href: https://vuetelescope.com
     component: IconVueTelescope
