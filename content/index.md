@@ -11,7 +11,7 @@ announcement:
   - 'Announcing Nuxt Content v2'
   - /blog/announcing-v2
 cta:
-  - Discord
+  - Join Discord Community
   - https://discord.gg/UN8mqgC79S
 secondary:
   - Follow on Twitter
@@ -53,6 +53,15 @@ Powerful Features
   description: 'Use it all quickly by preparing mobile and web  designs in one place.'
   ---
   ::
+
+  ::card
+  ---
+  icon: mdi-eslint
+  title: ESLint 
+  description: 'In all codes, eslint settings are completely done.'
+  ---
+  ::
+
 
 
   ::card
