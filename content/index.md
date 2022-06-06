@@ -130,6 +130,14 @@ NestJS Features
 
   ::card
   ---
+  icon: mdi-database
+  title: Mikro ORM with PostgreSQL
+  description: We've harnessed the power of PostgreSQL. You can change this of course. Also, all Mikro ORM settings were made.
+  ---
+  ::
+
+  ::card
+  ---
   icon: ph-lightning-duotone
   title: DX
   description: In some places there are specially written codes. This will allow you to write less code and increase your productivity by 10x.
