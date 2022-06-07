@@ -19,7 +19,7 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "@graphql-yoga/node": "2.8.0",
+    "@graphql-yoga/node": "2.9.1",
     "@typescript/ata": "0.9.3",
     "apollo-server-micro": "3.8.2",
     "emmet-monaco-es": "5.1.0",
