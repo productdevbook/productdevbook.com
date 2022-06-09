@@ -1,21 +1,19 @@
 ---
 title: "Product development easy for Full Stack Developers"
 description: "Typescripte monorepo solution powered by Nest JS, Vue, Capacitor and Ionic components for your software application."
-navigation: false
+exact: true
 layout: fluid
+navigation: false
 ---
 
 ::block-hero
 ---
-announcement:
-  - 'Announcing Nuxt Content v2'
-  - /blog/announcing-v2
 cta:
   - Join Discord Community
   - https://discord.gg/UN8mqgC79S
 secondary:
-  - Follow on Twitter
-  - https://twitter.com/productdevbook
+  - Go to docs
+  - /get-started
 ---
 
 #title
