@@ -40,6 +40,11 @@ export default defineNuxtConfig({
     preference: "dark",
   },
   theme: {},
+  content: {
+    navigation: {
+      fields: ['exact']
+    }
+  },
   github: {
     owner: "productdevbook",
     repo: "productdevbook.com",
