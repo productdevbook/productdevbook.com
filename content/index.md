@@ -8,6 +8,8 @@ navigation: false
 
 ::block-hero
 ---
+announcement:
+  - 'It is an open source project. 25% complete.'
 cta:
   - Join Discord Community
   - https://discord.gg/UN8mqgC79S
