@@ -56,6 +56,23 @@ Powerful Features
 
   ::card
   ---
+  icon: ic-baseline-insert-emoticon
+  title: Icônes Support
+  description: Access 100,000 icons from 100+ icon sets with the Icônes.
+  ---
+  ::
+
+  ::card
+  ---
+  icon: ph-moon-stars-duotone
+  title: Dark/Light Mode
+  description: Allow users to choose the color they want on their screen
+  ---
+  ::
+
+
+  ::card
+  ---
   icon: mdi-eslint
   title: ESLint 
   description: 'In all codes, eslint settings are completely done.'
@@ -124,7 +141,7 @@ NestJS Features
   ---
   icon: ic-round-language
   title: I18n
-  description: Localize graphql error messages to user's device. Or freeze the data you want in the database according to the language.
+  description: Localize graphql error messages to user's device. or the data you want in the database according to the language.
   ---
   ::
 
@@ -201,6 +218,14 @@ Mobile App Features with Capacitor
   icon: carbon-two-factor-authentication
   title: Auth with JWT Token/Refresh Token
   description: 'Signing up, logging in and making apollo graphql ...'
+  ---
+  ::
+  
+  ::card
+  ---
+  icon: ic-sharp-ads-click
+  title: Admob support
+  description: Integrate ads quickly in your apps
   ---
   ::
 
