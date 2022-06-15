@@ -13,10 +13,10 @@
     "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
+    "@docus/base": "npm:@docus/base-edge@latest",
     "@docus/docs-theme": "npm:@docus/docs-theme-edge@latest",
     "@docus/github": "npm:@docus/github-edge@latest",
-    "monaco-editor-core": "0.33.0",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.4"
   },
   "dependencies": {
     "@graphql-yoga/node": "2.8.0",
@@ -27,5 +27,8 @@
     "micro": "9.3.4",
     "micro-cors": "0.1.1",
     "xterm": "4.18.0"
+  },
+  "resolutions": {
+    "@vercel/nft": "0.18.2"
   }
 }
