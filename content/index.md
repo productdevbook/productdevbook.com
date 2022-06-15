@@ -79,6 +79,13 @@ Powerful Features
   ---
   ::
 
+  ::card
+  ---
+  icon: ic-round-language
+  title: I18n
+  description: Localize graphql error messages to user's device. or the data you want in the database according to the language.
+  ---
+  ::
 
 
   ::card
@@ -134,14 +141,6 @@ NestJS Features
   icon: mdi-graphql
   title: GraphQL
   description: 'Schemas generator, security, Relay pagination and more...'
-  ---
-  ::
-
-  ::card
-  ---
-  icon: ic-round-language
-  title: I18n
-  description: Localize graphql error messages to user's device. or the data you want in the database according to the language.
   ---
   ::
 
@@ -234,6 +233,14 @@ Mobile App Features with Capacitor
   icon: mdi-vuejs
   title: Ionic + Vite + Vue
   description: 'We can use your special components together with.'
+  ---
+  ::
+
+  ::card
+  ---
+  icon: ph-money
+  title: RevenueCat
+  description: In-app subscriptions made easy
   ---
   ::
 
