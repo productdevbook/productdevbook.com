@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from "nuxt";
 import colors from "tailwindcss/colors.js";
-import consola from 'consola'
 
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
@@ -24,9 +23,6 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    build: {
-      chunkSizeWarningLimit: Infinity
-    },
     define: {
       'process.env.FORCE_COLOR': {},
       'process.env.NODE_DISABLE_COLORS': {},
@@ -34,11 +30,7 @@ export default defineNuxtConfig({
       'process.env.FORCE_TERM': {}
     }
   },
-  generate: {
-    routes: []
-  },
   colorMode: {
     preference: "dark",
   },
-  theme: {},
 });
