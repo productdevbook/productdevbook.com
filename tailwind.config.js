@@ -18,6 +18,15 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: .5 },
+        }
+      },
+      animation: {
+        hello: 'wiggle 5s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+      }
     },
   },
   variants: {

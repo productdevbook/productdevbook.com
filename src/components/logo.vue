@@ -31,10 +31,10 @@
       </svg>
     </div>
 
-    <div class="flex items-center top-40 right-0 w-96 h-96 absolute justify-center z-[-20]">
+    <div class="flex items-center top-40 right-0 w-96 h-96 absolute animate-hello justify-center z-[-20]">
       <div class="hero-background absolute blur-[72px] w-80 h-80 rounded-[50%]" />
     </div>
-    <div class="hero-background absolute bottom-0 left-0 blur-[72px] w-80 h-80 rounded-[50%]" />
+    <div class="hero-background absolute bottom-0 left-0 blur-[72px] w-80 h-80 animate-hello rounded-[50%]" />
   </div>
 </template>
 
