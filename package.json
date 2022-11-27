@@ -1,9 +1,10 @@
 {
+  "name": "productdevbook",
+  "version": "0.0.1",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/productdevbook",
+  "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "private": true,
-  "packageManager": "yarn@3.3.0",
-  "engines": {
-    "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
-  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
