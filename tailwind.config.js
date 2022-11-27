@@ -5,13 +5,13 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   darkMode: 'class',
   content: [
-    './components/**/*.{js,vue,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './app.vue',
-    './assets/**/*.scss',
-    './assets/**/*.css',
+    './src/components/**/*.{js,vue,ts}',
+    './src/layouts/**/*.vue',
+    './src/pages/**/*.vue',
+    './src/plugins/**/*.{js,ts}',
+    './src/app.vue',
+    './src/assets/**/*.scss',
+    './src/assets/**/*.css',
   ],
   theme: {
     extend: {
@@ -21,12 +21,12 @@ module.exports = {
       keyframes: {
         wiggle: {
           '0%, 100%': { opacity: 1 },
-          '50%': { opacity: .5 },
-        }
+          '50%': { opacity: 0.5 },
+        },
       },
       animation: {
-        hello: 'wiggle 5s cubic-bezier(0.4, 0, 0.6, 1) infinite'
-      }
+        hello: 'wiggle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
     },
   },
   variants: {

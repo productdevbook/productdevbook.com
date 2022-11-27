@@ -75,6 +75,9 @@ export default defineNuxtConfig({
     logLevel: 'info',
   },
 
+  tailwindcss: {
+    configPath: '~/tailwind.config.js',
+  },
   plausible: {
     init: {
       domain: 'productdevbook.com',

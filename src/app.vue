@@ -23,7 +23,7 @@ useHead({
 <template>
   <Html :lang="locale">
     <Body
-      class="bg-white h-full w-full text-gray-800 antialiased transition-colors duration-300 dark:bg-gray-900 dark:text-gray-200"
+      class="bg-zinc-900 h-full w-full text-gray-800 antialiased transition-colors duration-300 dark:bg-gray-900 dark:text-gray-200"
     >
       <NuxtLayout>
         <NuxtPage />
