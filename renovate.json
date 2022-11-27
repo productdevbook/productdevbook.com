@@ -1,23 +1,31 @@
 {
-  "extends": ["config:base"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "rebaseWhen": "conflicted",
   "schedule": [
     "before 6am on the first day of the month"
   ],
+  "baseBranches": [
+    "main"
+  ],
+  "rangeStrategy": "bump",
   "packageRules": [
     {
-      "groupName": "Types",
-      "packagePatterns": ["^@types/"],
-      "automerge": true
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "NPM dependencies (major)"
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "NPM dependencies (non-major)"
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "groupName": "all"
     }
   ]
 }
