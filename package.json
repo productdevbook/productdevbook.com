@@ -5,6 +5,7 @@
   "funding": "https://github.com/sponsors/productdevbook",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "private": true,
+  "packageManager": "^pnpm@7.17.0",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
