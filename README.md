@@ -1,4 +1,10 @@
-# productdevbook.com
-Product development easy for Full Stack Developers
+# 👋 Welcome to productdevbook
 
-The productdevbook-monorepo is a monorepo solution set up and communicating with each other in the project by NestJS, Vue, Capacitor/Ionic to create a powerful management layer for your application. It speeds up our 1-year search and knowledge base. In this way, you quickly start coding an API, website, and mobile application. Use monorepo used with the Turborepo.
+This is a collection of resources for product development. It is a work in progress and will be updated regularly.
+
+[productdevbook.com](https://productdevbook.com)
+
+## What is product development?
+
+Product development is the process of creating a product. It is a broad term that can be applied to many different types of products. It can be applied to software, hardware, or even services.
+

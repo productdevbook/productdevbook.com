@@ -1,4 +1,31 @@
 {
-  "extends": ["config:base", "@nuxtjs"],
-  "labels": ["dependencies"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "rebaseWhen": "conflicted",
+  "schedule": [
+    "before 6am on the first day of the month"
+  ],
+  "baseBranches": [
+    "main"
+  ],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "groupName": "all"
+    }
+  ]
 }
