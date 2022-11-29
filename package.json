@@ -7,9 +7,9 @@
   "private": true,
   "packageManager": "^pnpm@7.17.0",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
+    "dev": "pnpm nuxi dev",
+    "build": "pnpm nuxi build",
+    "generate": "pnpm nuxi generate",
     "start": "node .output/server/index.mjs",
     "lint": "eslint ."
   },
