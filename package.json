@@ -24,7 +24,7 @@
     "apollo-server-micro": "3.8.2",
     "emmet-monaco-es": "5.1.0",
     "graphql": "16.5.0",
-    "micro": "9.3.4",
+    "micro": "10.0.1",
     "micro-cors": "0.1.1",
     "xterm": "4.18.0"
   },
